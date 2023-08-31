@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:  rgb(101, 190, 206) ;
+   
+}
+
+.logo_a{
+  height: 85px;
+  width: 85px;
+}
+
+form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 6px 10px  rgb(42, 112, 137);
+}
+
+label,select {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+input ,select  {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-color: aqua;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background-color:  rgb(89, 212, 233) ;
+    border-radius: 10px;
+}

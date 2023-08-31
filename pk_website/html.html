@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="sortcute icon" herf="images/pk_logo.png" type="coding projects/png"  href="images/pk_logo.png">
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> appointment</title>
+</head>
+<body >
+    <form id="form">
+        <div class="field">
+          
+    <div class="field">
+      <label for="name">email</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="field">
+      <label for="name">name</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="field">
+      <label for="message">hair style</label>
+      <select>
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="reply_to">comment</label>
+      <input type="text" name="reply_to" id="reply_to">
+    </div>
+  
+    <input type="submit" id="button" value="Send Email" >
+
+      </form>
+      
+      <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('4ezUUWrzuj6ouSZlQ')
+      </script> 
+
+      <script>
+         
+        const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_q0jjxk9';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+        
+        </script> 
+</body>
+</html>

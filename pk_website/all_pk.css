@@ -1,0 +1,170 @@
+/*  home page */
+.main_html,.mian_body {
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+.b_image{
+    position: absolute;
+    z-index: 1;
+    background-image: url('images/pk_background_2.png');
+    background-size: cover;
+    background-position: center;
+     height: 100%;
+     width: 100%;
+    }
+    
+    .link_1_mian{
+    position: absolute;
+    z-index: 2;
+    text-decoration: none;
+    color: aliceblue;
+    }
+    .link_2_mian{
+    position: absolute;
+    z-index: 2;
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 25%;
+       }
+    
+    .logo_mian{
+     position: absolute;
+    z-index: 3;
+    height: 80px;
+    width: 80px;
+    margin-left: 93%;
+    }
+
+
+    @media  (min-width: 1285.60px ) {
+      .link_2_mian{
+        position: absolute;
+        z-index: 2;
+        text-decoration: none;
+        color: aliceblue;
+        margin-left: 10%;
+           }
+    }
+
+    @media  (max-width: 459.20px ) {
+      .logo_mian{
+        position: absolute;
+       z-index: 3;
+       height: 80px;
+       width: 80px;
+       margin-left: 80%;
+      }
+       .b_image{
+        position: absolute;
+        z-index: 1;
+        background-image: url('images/pk_background_2.png');
+        background-size: cover;
+        background-position: center;
+         height: 100%;
+         width: 100%;
+        }
+       }
+
+
+/*   services page */
+
+.img1{
+height: 400px;
+width: 400px;
+}
+
+.c_s{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    }
+    .body_s{
+        background-color: rgb(101, 190, 206);
+    }
+    .sc_s{
+    margin: 10px;
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px rgb(30, 135, 227);
+    }
+    
+    .a_s{
+    text-decoration: none;
+    color: black;
+    }
+    .a_s:active{
+    color: black;
+    }
+    .a_s:hover{
+    color: black;  
+    } 
+    .logo_s{
+      display: flex; 
+    flex-direction: row;
+    justify-content: right;
+    }
+    .content_s{
+    height: 90px;
+    width: 90px;
+    
+    }
+
+   /* appointment_pk */
+
+    .body_a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color:  rgb(101, 190, 206) ;
+     
+  }
+
+  .logo_a{
+    height: 85px;
+    width: 85px;
+  }
+
+  form {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      background-color: #ffffff;
+      text-align: center;
+      box-shadow: 6px 10px  rgb(42, 112, 137);
+  }
+
+  label,select {
+      display: block;
+      margin-bottom: 10px;
+      text-align: left; 
+  }
+
+  input ,select  {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      border-color: aqua;
+  }
+
+  input[type="submit"] {
+      margin-top: 20px;
+      background-color:  rgb(89, 212, 233) ;
+      border-radius: 10px;
+  }
+
+
+
+    
+    
+
+
+
+
+
+
